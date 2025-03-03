@@ -83,6 +83,23 @@ ol {
   background-color: inherit;
 }
 
+button:focus {
+  outline: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .result {
   /* display: flex;
   flex-direction: column;
@@ -230,6 +247,11 @@ ol {
 
 .content__list-item {
   width: 390px;
+  padding: 0 3px;
+}
+
+.content__list-item:last-child {
+  margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -244,6 +266,10 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card-description-container {
