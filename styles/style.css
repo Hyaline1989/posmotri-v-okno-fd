@@ -81,6 +81,7 @@ ol {
   text-align: center;
   color: #fff;
   background-color: inherit;
+  cursor: pointer;
 }
 
 button:focus {
@@ -162,6 +163,7 @@ button:focus {
   width: 19px;
   height: 19px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -235,6 +237,7 @@ button:focus {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow-y: auto;
 }
@@ -260,6 +263,23 @@ button:focus {
   font-style: 30px; */
   text-decoration: none;
   color: #fff;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .content__video-card {
