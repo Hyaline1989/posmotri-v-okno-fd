@@ -286,6 +286,8 @@ button:focus {
   width: 196px;
 }
 
+/* Чтобы загрузился коммит */
+
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
